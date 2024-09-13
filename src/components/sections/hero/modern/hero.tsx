@@ -39,6 +39,7 @@ function Hero() {
                     src={'/images/hearts-ornament.png'}
                     style={{ objectFit: 'scale-down' }}
                     alt="img"
+                    quality={100}
                     fill
                   />
                 </motion.span>

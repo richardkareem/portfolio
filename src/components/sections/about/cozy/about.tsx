@@ -18,10 +18,14 @@ function About() {
             <div className="space-y-4">
               <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 <TextReveal>
-                  An IT professional with a background from Politeknik Negeri Jakarta, I specialize in web and mobile interface
-                  development. I have successfully applied this expertise across various projects. Over the past six months, I have been
-                  employed at PT. Newfemme, where I have actively participated in projects demanding creativity and strong problem-
-                  solving skills. The role required agility, necessitating quick learning of updated tech stacks and industry trends
+                  An IT professional with a background from Jakarta State
+                  Polytechnic, I specialize in web and mobile interface
+                  development. I have successfully applied this expertise across
+                  various projects over the past 1 year 4 months. I employing at
+                  PT. Newfemme, where I have actively participated in projects
+                  demanding creativity and strong problem-solving skills. The
+                  role required agility, necessitating quick learning of updated
+                  tech stacks and industry trends
                 </TextReveal>
               </p>
               <div className="flex gap-2">
@@ -39,7 +43,7 @@ function About() {
           <div className="relative flex w-full items-center justify-end">
             <Image
               alt="Image"
-              className="aspect-square h-full overflow-hidden rounded-xl  object-center scale-x-100 object-contain"
+              className="aspect-square h-full scale-x-100 overflow-hidden  rounded-xl object-contain object-center"
               src="/images/hero2.jpg"
               width={550}
               height={550}
