@@ -81,7 +81,7 @@ function ProjectCard({
           </Tooltip>
         </TooltipProvider>
       </CardFooter>
-      <Link href={'/projects/' + slug} className="z-1 absolute inset-0 block" />
+      {/*<Link href={'/projects/' + slug} className="z-1 absolute inset-0 block" />*/}
     </Card>
   );
 }

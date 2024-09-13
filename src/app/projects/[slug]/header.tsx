@@ -26,6 +26,7 @@ type ProjectMetadata = {
   techstack: Array<{ label: string }>;
   selected: boolean;
   slug: string;
+  playstore: string;
 };
 
 type HeaderProps = {
@@ -34,7 +35,7 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   const {
-    metadata: { name, description, website, github }
+    metadata: { name, description, website, github, playstore }
   } = props;
 
   return (
@@ -74,6 +75,16 @@ const Header = (props: HeaderProps) => {
             Github
             <ArrowUpRightIcon className="ml-2 size-5" />
           </Link>
+        )}
+        {playstore && (
+            <Link
+                href={playstore}
+                className={cn(buttonVariants(), 'group')}
+                target="_blank"
+                >
+              Playstore
+              <ArrowUpRightIcon className={'ml-2 size-5'} />
+            </Link>
         )}
       </motion.div>
     </div>

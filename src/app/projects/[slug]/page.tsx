@@ -85,10 +85,10 @@ const ProjectPage = (props: ProjectPageProps) => {
   }
 
   const { metadata, content } = project;
-  // console.log({ project });
+  // console.log({ metadata });
   return (
     <div className="container mx-auto">
-      <Header metadata={metadata} />
+      <Header  metadata={metadata} />
       <Image
         src={`/images/projects/${slug}/cover.jpg`}
         width={1280}

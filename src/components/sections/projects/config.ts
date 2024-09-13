@@ -35,7 +35,7 @@ const projects: Project[] = [
   },
   {
     name: 'Shop With Me',
-    slug: 'e-commerce app',
+    slug: 'shop_with_me',
     description:
       'an e-commerce platform, can shop together with streaming called shop with me',
     thumbnail: '/images/projects/shop_with_me_website/cover.jpg',
