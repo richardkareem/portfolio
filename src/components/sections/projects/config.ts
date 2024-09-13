@@ -22,12 +22,12 @@ const projects: Project[] = [
     slug: 'bonzona_web',
     description:
       'A platform for inform or introduction about bonzona travel, and admin can change the content dynamic with separate page for admin',
-    thumbnail: '/images/projects/bonzona_web/cover.png',
+    thumbnail: '/images/projects/bonzona_web/cover.jpg',
     tags: ['Next Js', 'Firebase', 'Tailwind', 'Mysql']
   },
   {
   name: 'Qislam',
-    slug: 'qislam-apps',
+    slug: 'qislam_app',
     description:
       'A quiz application specifically for islam elementary school children, can be dynamic from the admin, and supports video, audio, and text',
     thumbnail: '/images/projects/qislam_app/cover.jpg',
@@ -38,7 +38,7 @@ const projects: Project[] = [
     slug: 'shop_with_me',
     description:
       'an e-commerce platform, can shop together with streaming called shop with me',
-    thumbnail: '/images/projects/shop_with_me_website/cover.jpg',
+    thumbnail: '/images/projects/shop_with_me/cover.jpg',
     tags: ['NextJS', 'Bootstrap 3', 'Google Geolocation Api', 'Firebase', 'Ant Design']
   },
   {
@@ -62,7 +62,7 @@ const projects: Project[] = [
     slug: 'jobsnf',
     description:
         'A mobile application and website for job seekers',
-    thumbnail: '/images/projects/jobsnf/cover.png',
+    thumbnail: '/images/projects/jobsnf/cover.jpg',
     tags: ['React Native', 'Next Js' , 'React redux Thunk', 'Boostrap', 'Ant Design']
   },
 ];

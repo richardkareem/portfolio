@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRightIcon } from 'lucide-react';
 
 import Link from 'next/link';
+import {toast} from "sonner";
 
 const animation = {
   hide: {
@@ -27,6 +28,7 @@ type ProjectMetadata = {
   selected: boolean;
   slug: string;
   playstore: string;
+  appstore: string
 };
 
 type HeaderProps = {
@@ -35,7 +37,7 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   const {
-    metadata: { name, description, website, github, playstore }
+    metadata: { name, description, website, github, playstore, appstore }
   } = props;
 
   return (
@@ -66,16 +68,26 @@ const Header = (props: HeaderProps) => {
             <ArrowUpRightIcon className="ml-2 size-5" />
           </Link>
         )}
-        {github && (
-          <Link
-            href={github}
-            className={cn(buttonVariants(), 'group')}
-            target="_blank"
-          >
-            Github
-            <ArrowUpRightIcon className="ml-2 size-5" />
-          </Link>
-        )}
+        {github ? github === "private" ? (
+            <button
+                onClick={()=>{
+                  toast.error('Github is private')
+                }}
+                className={cn(buttonVariants(), 'group')}
+            >
+              Github
+              <ArrowUpRightIcon className="ml-2 size-5" />
+            </button>
+        ) : (
+            <Link
+                href={github}
+                className={cn(buttonVariants(), 'group')}
+                target="_blank"
+            >
+              Github
+              <ArrowUpRightIcon className="ml-2 size-5" />
+            </Link>
+        ): null}
         {playstore && (
             <Link
                 href={playstore}
@@ -83,6 +95,16 @@ const Header = (props: HeaderProps) => {
                 target="_blank"
                 >
               Playstore
+              <ArrowUpRightIcon className={'ml-2 size-5'} />
+            </Link>
+        )}
+        {appstore && (
+            <Link
+                href={playstore}
+                className={cn(buttonVariants(), 'group')}
+                target="_blank"
+                >
+              Appstore
               <ArrowUpRightIcon className={'ml-2 size-5'} />
             </Link>
         )}

@@ -11,6 +11,7 @@ export type ProjectMetadata = {
   selected: boolean;
   slug: string;
   playstore: string;
+  appstore: string;
 };
 
 export type BlogMetadata = {
@@ -34,7 +35,6 @@ const readFile = (filePath: string) => {
 const readMDXFile = <T>(filePath: string) => {
   const rawContent = readFile(filePath);
   const { content, data } = matter(rawContent);
-
   return {
     content,
     metadata: data as T
@@ -78,7 +78,7 @@ export const getAllPages = <T>(
       const slug = fileName.replace(/\.mdx$/, '');
       const fullPath = path.join(pagesDirectory, fileName);
       const { metadata } = readMDXFile<T>(fullPath);
-
+      // console.log({metadata})
       return {
         ...metadata,
         slug
