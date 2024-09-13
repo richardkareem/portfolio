@@ -21,7 +21,7 @@ function About() {
                   An IT professional with a background from Jakarta State
                   Polytechnic, I specialize in web and mobile interface
                   development. I have successfully applied this expertise across
-                  various projects over the past 1 year 4 months. I employing at
+                  various projects over the past  2 years. I employing at
                   PT. Newfemme, where I have actively participated in projects
                   demanding creativity and strong problem-solving skills. The
                   role required agility, necessitating quick learning of updated
